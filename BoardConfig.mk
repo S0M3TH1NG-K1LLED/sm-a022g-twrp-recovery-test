@@ -24,7 +24,7 @@ TARGET_USES_64_BIT_BINDER := true
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := k39tv1_bsp_titan_hamster
+TARGET_BOOTLOADER_BOARD_NAME := k39tv1_bsp_titan_hamster # hamster :3
 TARGET_NO_BOOTLOADER := true
 
 # Display
@@ -82,7 +82,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 # Security patch level
 VENDOR_SECURITY_PATCH := 2021-08-01
 
-# Verified Boot
+# Verified Boot (scary Verity)
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 BOARD_AVB_RECOVERY_KEY_PATH := external/avb/test/data/testkey_rsa4096.pem
@@ -97,7 +97,23 @@ PLATFORM_VERSION := 16.1.0
 
 # TWRP Configuration
 TW_THEME := portrait_hdpi
-TW_EXTRA_LANGUAGES := true
+TW_EXTRA_LANGUAGES := false
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
+
+# this is mineee
+TW_EXCLUDE_ENCRYPTED_BACKUP := true
+TW_DEFAULT_LANGUAGE := en
+TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
+TW_MAX_BRIGHTNESS := 255
+
+# fixing, hehehehehe
+RECOVERY_GRAPHICS_FORCE_USE_LINUXFB := true
+TARGET_DISABLE_TRIPLE_BUFFERING := true
+BOARD_HAS_FLIPPED_SCSREEN := true
+
+# Optimizations, Optimizations!!!
+TW_EXCLUDE_TWRPAPP := true
+TW_EXCLUDE_DEFAULT_TEMPLATES := true
+TW_INPUT_BLACKLIST := "hbtp"
