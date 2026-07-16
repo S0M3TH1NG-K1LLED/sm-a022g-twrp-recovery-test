@@ -21,4 +21,4 @@ do not blindly flash things... makes phone turn into brick if u r not accurate.
 5. reset. leave the download mode and instantly get into... for now just flashing backlight of the phone, I'm still working on recovery :DD
 
 # SHOUTOUT
-huge thx to [Zikinyashka]([url](https://4pda.to/forum/index.php?showuser=9508081)) on 4pda and their [guide]([url](https://4pda.to/forum/index.php?showtopic=1071978&view=findpost&p=116160661)) on how to get fastbootd on 4pda. whole "resetting, then flashing vbmeta.tar" was kindly stolen by me :)
+huge thx to [Zikinyashka](https://4pda.to/forum/index.php?showuser=9508081) on 4pda and their [guide](https://4pda.to/forum/index.php?showtopic=1071978&view=findpost&p=116160661) on how to get fastbootd on 4pda. whole "resetting, then flashing vbmeta.tar" was kindly stolen by me :)
